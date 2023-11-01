@@ -1,0 +1,63 @@
+<!-- Describe task in general -->
+
+<p>
+    Dr. Asimov, a robotics researcher, loves to research, but hates houseworks and his house were really dirty. So, he has developed a cleaning robot. 
+</p>
+
+<p>
+    As shown in the following figure, his house has 9 rooms, where each room is identified by an alphabet:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    The robot operates as follows:
+</p>
+<ul>
+    <li>if the battery runs down, the robot stops;</li>
+    <li>if not so, the robot chooses a direction from four cardinal points with the equal probability, and moves to the room in that direction. Then, the robot clean the room and consumes 1 point of the battery;</li>
+    <li>However, if there is no room in that direction, the robot does not move and remains the same room. In addition, there is a junk room in the house where the robot can not enter, and the robot also remains when it tries to enter the junk room. The robot also consumes 1 point of the battery when it remains the same place.</li>
+</ul>
+
+<p>
+    A battery charger for the robot is in a room. It would be convenient for Dr. Asimov if the robot stops at the battery room when its battery run down. Your task is to write a program which computes the probability of the robot stopping at the battery room.
+</p>
+
+<p>
+    You are given battery capacity <code>cap</code> and <code>start, bat, junk</code> are respectively represent the room where the robot is initially, the battery room, and the junk room.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> One integer (<span translate="no">{% if is_js %}number{% else %}int{% endif %}</span>) and three strings (<span translate="no">str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+    <strong>Output:</strong> Float (<span translate="no">{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>the answer may not have an error greater than 0.000001.</i></li>
+    </ul>
+</p>
