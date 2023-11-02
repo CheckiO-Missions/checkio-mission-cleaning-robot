@@ -26,7 +26,7 @@ TESTS = {
     "Extra": [
         {
             "input": [3, "E", "A", "B"],
-            "answer": 0.09375,
+            "answer": 0.078125,
         },
         {
             "input": [2, "E", "A", "I"],
