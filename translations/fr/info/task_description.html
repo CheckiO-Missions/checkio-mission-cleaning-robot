@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p>
+    Asimov, un chercheur en robotique, adore faire de la recherche, mais déteste les travaux ménagers et sa maison était vraiment sale. Il a donc mis au point un robot nettoyeur. 
+</p>
+
+<p>
+    Comme le montre la figure suivante, sa maison comporte 9 pièces, chaque pièce étant identifiée par une lettre de l'alphabet:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot1.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    Le robot fonctionne comme suit:
+</p>
+<ul>
+    <li>si la batterie est déchargée, le robot s'arrête;</li>
+    <li>si ce n'est pas le cas, le robot choisit une direction parmi quatre points cardinaux avec une probabilité égale, et se déplace vers la pièce dans cette direction. Ensuite, le robot nettoie la pièce et consomme 1 point de batterie;</li>
+    <li>Toutefois, s'il n'y a pas de pièce dans cette direction, le robot ne se déplace pas et reste dans la même pièce. De plus, il y a un local à poubelles dans la maison où le robot ne peut pas entrer, et le robot reste également dans le local à poubelles lorsqu'il essaie d'y entrer. Le robot consomme également 1 point de batterie lorsqu'il reste au même endroit.</li>
+</ul>
+
+<p>
+    Un chargeur de batterie pour le robot se trouve dans une pièce. Il serait pratique pour le Dr Asimov que le robot s'arrête dans la salle des batteries lorsque sa batterie est déchargée. Votre tâche consiste à écrire un programme qui calcule la probabilité que le robot s'arrête dans le local des batteries.
+</p>
+
+<p>
+    Vous disposez des capacités de batterie <code>cap</code> et <code>start, bat, junk</code> qui représentent respectivement la pièce où le robot se trouve initialement, la salle des batteries et la salle des déchets.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Un entier (<span>{% if is_js %}number{% else %}int{% endif %}</span>) et trois chaînes de caractères (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Sortie:</strong> Flottant (<span>{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!--<p>-->
+<!--    <strong>Preconditions:</strong>-->
+<!--    <ul>-->
+<!--    <li><i>the answer may not have an error greater than 0.000001.</i></li>-->
+<!--    </ul>-->
+<!--</p>-->
+<p><i>Cette mission a été effectuée à partir de <a target="_blank" href="https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1020">AIZU ONLINE JUDGE</a></i></p>
