@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p>
+    Доктор Азімов, дослідник робототехніки, любить досліджувати, але ненавидить роботу по дому, а його будинок був дуже брудним. Тому він розробив робота-прибиральника. 
+</p>
+
+<p>
+    Як показано на наступному малюнку, його будинок має 9 кімнат, де кожна кімната позначена літерою алфавіту:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot1.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    Робот працює наступним чином:
+</p>
+<ul>
+    <li>якщо батарея розряджається, робот зупиняється;</li>
+    <li>якщо ні, то робот вибирає напрямок з чотирьох сторін світу з рівною ймовірністю і рухається до кімнати у цьому напрямку. Потім робот прибирає кімнату і витрачає 1 бал заряду батареї;</li>
+    <li>Однак, якщо в цьому напрямку немає кімнати, робот не рухається і залишається в тій самій кімнаті. Крім того, у будинку є комора, куди робот не може потрапити, і він також залишається там, коли намагається потрапити до комори. Робот також витрачає 1 бал батареї, коли залишається на одному місці.</li>
+</ul>
+
+<p>
+    Зарядний пристрій для робота знаходиться у кімнаті. Доктору Азімову було б зручно, якби робот зупинявся у кімнаті, коли його батарея розряджається. Ваша задача - написати програму, яка обчислює ймовірність того, що робот зупиниться у кімнаті.
+</p>
+
+<p>
+    Вам задано ємність батареї <code>cap</code> та <code>start, bat, junk</code>, які відповідно представляють кімнату, де знаходиться робот на початку, кімнату з батареєю та кімнату зі сміттям.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Одне ціле число (<span>{% if is_js %}number{% else %}int{% endif %}</span>) і три рядки (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Вивести:</strong> Число з плаваючою точкою (<span>{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!--<p>-->
+<!--    <strong>Preconditions:</strong>-->
+<!--    <ul>-->
+<!--    <li><i>the answer may not have an error greater than 0.000001.</i></li>-->
+<!--    </ul>-->
+<!--</p>-->
+<p><i>Ця місія була взята з <a target="_blank" href="https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1020">AIZU ONLINE JUDGE</a></i></p>
