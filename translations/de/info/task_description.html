@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p>
+    Dr. Asimov, ein Robotikforscher, liebt es zu forschen, aber er hasst Hausarbeit und sein Haus war sehr schmutzig. Also hat er einen Reinigungsroboter entwickelt. 
+</p>
+
+<p>
+    Wie in der folgenden Abbildung zu sehen ist, hat sein Haus 9 Zimmer, wobei jedes Zimmer durch einen Buchstaben des Alphabets gekennzeichnet ist:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot1.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    Der Roboter arbeitet wie folgt:
+</p>
+<ul>
+    <li>wenn die Batterie leer ist, hält der Roboter an;</li>
+    <li>ist dies nicht der Fall, wählt der Roboter eine Richtung aus vier Himmelsrichtungen mit gleicher Wahrscheinlichkeit und bewegt sich in den Raum in dieser Richtung. Dann säubert der Roboter den Raum und verbraucht 1 Punkt der Batterie;</li>
+    <li>Wenn es in dieser Richtung jedoch keinen Raum gibt, bewegt sich der Roboter nicht und bleibt im selben Raum. Außerdem gibt es in dem Haus eine Rumpelkammer, die der Roboter nicht betreten kann, und der Roboter bleibt auch stehen, wenn er versucht, die Rumpelkammer zu betreten. Der Roboter verbraucht auch 1 Punkt der Batterie, wenn er an demselben Ort bleibt.</li>
+</ul>
+
+<p>
+    Ein Batterieladegerät für den Roboter befindet sich in einem Zimmer. Für Dr. Asimov wäre es praktisch, wenn der Roboter im Batterieraum stehen bleibt, wenn seine Batterie leer ist. Ihre Aufgabe ist es, ein Programm zu schreiben, das die Wahrscheinlichkeit berechnet, dass der Roboter im Batterieraum stehen bleibt.
+</p>
+
+<p>
+    Sie erhalten die Batteriekapazitäten <code>cap</code> und <code>start, bat, junk</code>, die jeweils für den Raum stehen, in dem sich der Roboter zu Beginn befindet, den Batterieraum und den Müllraum.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Eine Ganzzahl (<span>{% if is_js %}number{% else %}int{% endif %}</span>) und drei Zeichenketten (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Fließkomma (<span>{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!--<p>-->
+<!--    <strong>Preconditions:</strong>-->
+<!--    <ul>-->
+<!--    <li><i>the answer may not have an error greater than 0.000001.</i></li>-->
+<!--    </ul>-->
+<!--</p>-->
+<p><i>Diese Mission wurde von <a target="_blank" href="https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1020">AIZU ONLINE JUDGE</a></i></p>
