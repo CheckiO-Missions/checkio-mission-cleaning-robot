@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p>
+    Dr Asimov, badacz robotyki, uwielbia prowadzić badania, ale nienawidzi prac domowych, a jego dom był naprawdę brudny. Stworzył więc robota sprzątającego. 
+</p>
+
+<p>
+    Jak pokazano na poniższym rysunku, jego dom ma 9 pokoi, z których każdy jest oznaczony literą alfabetu:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot1.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    Robot działa w następujący sposób:
+</p>
+<ul>
+    <li>jeśli bateria się wyczerpie, robot zatrzymuje się;</li>
+    <li>jeśli tak się nie stanie, robot wybiera kierunek z czterech punktów kardynalnych z równym prawdopodobieństwem i przemieszcza się do pokoju w tym kierunku. Następnie robot sprząta pokój i zużywa 1 punkt baterii;</li>
+    <li>Jeśli jednak w danym kierunku nie ma pokoju, robot nie porusza się i pozostaje w tym samym pokoju. Ponadto w domu znajduje się pomieszczenie ze śmieciami, do którego robot nie może wejść, a robot pozostaje również, gdy próbuje wejść do pomieszczenia ze śmieciami. Robot zużywa również 1 punkt baterii, gdy pozostaje w tym samym miejscu.</li>
+</ul>
+
+<p>
+    Ładowarka dla robota znajduje się w pokoju. Byłoby wygodne dla Dr. Asimova, gdyby robot zatrzymywał się w pomieszczeniu z bateriami, gdy jego bateria się wyczerpie. Pana zadaniem jest napisanie programu, który obliczy prawdopodobieństwo zatrzymania się robota w akumulatorni.
+</p>
+
+<p>
+    Otrzymują Państwo dane dotyczące pojemności baterii <code>cap</code> i <code>start, bat, junk</code>, które reprezentują odpowiednio pomieszczenie, w którym robot znajduje się na początku, pomieszczenie z bateriami i pomieszczenie ze śmieciami.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Jedna liczba całkowita (<span>{% if is_js %}number{% else %}int{% endif %}</span>) i trzy ciągi znaków (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Float (<span>{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!--<p>-->
+<!--    <strong>Preconditions:</strong>-->
+<!--    <ul>-->
+<!--    <li><i>the answer may not have an error greater than 0.000001.</i></li>-->
+<!--    </ul>-->
+<!--</p>-->
+<p><i>Ta misja została pobrana z <a target="_blank" href="https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1020">AIZU ONLINE JUDGE</a></i></p>
