@@ -1,0 +1,65 @@
+<!-- Describe task in general -->
+
+<p>
+    阿西莫夫博士是一位机器人研究员，他热爱研究，但讨厌做家务，因为他的房子实在太脏了。于是，他研发了一款清洁机器人。 
+</p>
+
+<p>
+    如下图所示，他的房子有 9 个房间，每个房间用一个英文字母标识：
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}cleaning-robot1.png" alt="example" style="max-height: 300px"/>
+</p>
+
+<p>
+    机器人的操作如下
+</p>
+<ul>
+    <li>如果电池耗尽，机器人停止；</li>
+    <li>如果没有耗尽，机器人会以相同的概率从四个红心点中选择一个方向，然后移动到该方向上的房间。然后，机器人打扫房间，消耗 1 点电池；</li>
+    <li>但是，如果该方向没有房间，机器人就不会移动，而是留在原房间。此外，房子里还有一间垃圾房，机器人无法进入，当机器人试图进入垃圾房时，也会停留在那里。当机器人停留在原地时，也会消耗 1 点电池。</li>
+</ul>
+
+<p>
+    机器人的充电器在一个房间里。如果机器人在电池耗尽时停在电池室，会给阿西莫夫博士带来方便。你的任务是编写一个程序，计算机器人停在电池室的概率。
+</p>
+
+<p>
+    给定的电池容量<code>cap</code> 和<code>start, bat, junk</code> 分别代表机器人最初所在的房间、电池室和垃圾房。
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>一个整数 (<span>{% if is_js %}number{% else %}int{% endif %}</span>) 和三个字符串 (<span>str{% if is_js %}ing{% endif %}</span>).
+</p>
+
+<p>
+   <strong>输出：</strong>浮点数 (<span>{% if is_js %}number{% else %}float{% endif %}</span>). 
+</p>
+
+
+<p>
+    <strong>例子</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!--<p>-->
+<!--    <strong>Preconditions:</strong>-->
+<!--    <ul>-->
+<!--    <li><i>the answer may not have an error greater than 0.000001.</i></li>-->
+<!--    </ul>-->
+<!--</p>-->
+<p><i>该任务来自<a target="_blank" href="https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=1020">AIZU ONLINE JUDGE</a></i></p>
